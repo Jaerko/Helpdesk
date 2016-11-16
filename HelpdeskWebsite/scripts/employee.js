@@ -214,7 +214,7 @@ function loadDepartmentDDL(empdep)
             html += "<option value=\"" + this["Id"] + "\">" + this["DepartmentName"] + "</option>";
 
         });
-        $("#ddlDepts").append(html);
+        $("#ddlDepts").append(html); 
         $("#ddlDepts").val(empdep);
     })
     .fail(function (jqXHR, textStatus, errorThrown) {
