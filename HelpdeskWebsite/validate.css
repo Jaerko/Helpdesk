@@ -1,0 +1,9 @@
+﻿div.error
+{
+    background-color: #1bd0c0;
+    border-color: #b200ff;
+    border-style: solid solid solid solid;
+    border-width: 2px;
+    width:80%;
+    text-align: center;
+}
