@@ -30,7 +30,7 @@ namespace HelpdeskDAL
             }
             catch(Exception ex)
             {
-                DALUtils.ErrorRoutine(ex, "EmployeeDAO", "GetByLastname");
+                DALUtilsV2.ErrorRoutine(ex, "EmployeeDAO", "GetByLastname");
             }
             return emp;
         }
@@ -54,6 +54,7 @@ namespace HelpdeskDAL
                     .Set("Lastname", emp.Lastname)
                     .Set("Phoneno", emp.Phoneno)
                     .Set("Title", emp.Title)
+                    .Set("StaffPicture64", emp.StaffPicture64)
                     .Inc("Version", 1);
                 
                 status = repo.Update(emp.Id.ToString(), filter, update);
@@ -62,7 +63,7 @@ namespace HelpdeskDAL
             }
             catch (Exception ex)
             {
-                DALUtils.ErrorRoutine(ex, "EmployeeDAO", "UpdateWithRepo");
+                DALUtilsV2.ErrorRoutine(ex, "EmployeeDAO", "UpdateWithRepo");
 
             }
             return status;
@@ -80,7 +81,7 @@ namespace HelpdeskDAL
             }
             catch(Exception ex)
             {
-                DALUtils.ErrorRoutine(ex, "EmployeeDAO", "Create");
+                DALUtilsV2.ErrorRoutine(ex, "EmployeeDAO", "Create");
             }
             return emp;
         }
@@ -96,7 +97,7 @@ namespace HelpdeskDAL
             }
             catch (Exception ex)
             {
-                DALUtils.ErrorRoutine(ex, "EmployeeDAO", "Delete");
+                DALUtilsV2.ErrorRoutine(ex, "EmployeeDAO", "Delete");
             }
 
             return deleteFlag;
@@ -118,7 +119,7 @@ namespace HelpdeskDAL
             }
             catch (Exception ex)
             {
-                DALUtils.ErrorRoutine(ex, "EmployeeDAO", "GetAll");
+                DALUtilsV2.ErrorRoutine(ex, "EmployeeDAO", "GetAll");
             }
             return empList;
         }
@@ -136,7 +137,7 @@ namespace HelpdeskDAL
             }
             catch (Exception ex)
             {
-                DALUtils.ErrorRoutine(ex, "EmployeeDAO", "GetById");
+                DALUtilsV2.ErrorRoutine(ex, "EmployeeDAO", "GetById");
             }
             return emp;
         }

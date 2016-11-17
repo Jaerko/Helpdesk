@@ -12,7 +12,7 @@ namespace Case1UnitTests
 
         public void TestLoadCollectionsShouldReturnTrue()
         {
-            DALUtils util = new DALUtils();
+            DALUtilsV2 util = new DALUtilsV2();
             Assert.IsTrue(util.LoadCollections());
         }
     }

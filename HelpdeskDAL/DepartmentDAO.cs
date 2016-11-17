@@ -32,7 +32,7 @@ namespace HelpdeskDAL
             }
             catch (Exception ex)
             {
-                DALUtils.ErrorRoutine(ex, "DepartmentDAO", "GetByLastname");
+                DALUtilsV2.ErrorRoutine(ex, "DepartmentDAO", "GetByLastname");
             }
             return dept;
         }
@@ -59,7 +59,7 @@ namespace HelpdeskDAL
             }
             catch (Exception ex)
             {
-                DALUtils.ErrorRoutine(ex, "DepartmentDAO", "Update");
+                DALUtilsV2.ErrorRoutine(ex, "DepartmentDAO", "Update");
 
             }
             return status;
@@ -79,7 +79,7 @@ namespace HelpdeskDAL
             }
             catch (Exception ex)
             {
-                DALUtils.ErrorRoutine(ex, "DepartmentDAO", "Create");
+                DALUtilsV2.ErrorRoutine(ex, "DepartmentDAO", "Create");
             }
             return dept;
         }
@@ -95,7 +95,7 @@ namespace HelpdeskDAL
             }
             catch (Exception ex)
             {
-                DALUtils.ErrorRoutine(ex, "DepartmentDAO", "Delete");
+                DALUtilsV2.ErrorRoutine(ex, "DepartmentDAO", "Delete");
             }
 
             return deleteFlag;
@@ -117,7 +117,7 @@ namespace HelpdeskDAL
             }
             catch (Exception ex)
             {
-                DALUtils.ErrorRoutine(ex, "DepartmentDAO", "GetAll");
+                DALUtilsV2.ErrorRoutine(ex, "DepartmentDAO", "GetAll");
             }
             return deptList;
         }
@@ -135,7 +135,7 @@ namespace HelpdeskDAL
             }
             catch (Exception ex)
             {
-                DALUtils.ErrorRoutine(ex, "DepartmentDAO", "GetById");
+                DALUtilsV2.ErrorRoutine(ex, "DepartmentDAO", "GetById");
             }
             return dept;
         }

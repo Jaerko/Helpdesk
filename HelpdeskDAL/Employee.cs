@@ -17,6 +17,8 @@ namespace HelpdeskDAL
         public string Email { get; set; }
         public string Phoneno { get; set; }
         public ObjectId DepartmentId { get; set; }
+        public string StaffPicture64 { get; set; }
+        public bool IsTech { get; set; }
 
         public string GetDepartmentIdAsString()
         {

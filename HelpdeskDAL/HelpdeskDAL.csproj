@@ -52,7 +52,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DALUtils.cs" />
+    <Compile Include="Call.cs" />
+    <Compile Include="DALUtilsV2.cs" />
     <Compile Include="DbContext.cs" />
     <Compile Include="Department.cs" />
     <Compile Include="DepartmentDAO.cs" />

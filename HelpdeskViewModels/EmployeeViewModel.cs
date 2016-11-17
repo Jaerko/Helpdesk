@@ -20,6 +20,8 @@ namespace HelpdeskViewModels
         public int Version { get; set; }
         public string DepartmentId { get; set; }
         public string Id { get; set; }
+        public string StaffPicture64 { get; set; }
+        public bool IsTech { get; set; }
 
         public EmployeeViewModel()
         {
@@ -37,6 +39,8 @@ namespace HelpdeskViewModels
                 Firstname = emp.Firstname;
                 Lastname = emp.Lastname;
                 Phoneno = emp.Phoneno;
+                IsTech = emp.IsTech;
+                StaffPicture64 = emp.StaffPicture64;
                 Email = emp.Email;
                 Id = emp.GetIdAsString();
                 DepartmentId = emp.GetDepartmentIdAsString();
@@ -61,6 +65,8 @@ namespace HelpdeskViewModels
                 Lastname = emp.Lastname;
                 Phoneno = emp.Phoneno;
                 Email = emp.Email;
+                StaffPicture64 = emp.StaffPicture64;
+                IsTech = emp.IsTech;
                 Id = emp.GetIdAsString();
                 DepartmentId = emp.GetDepartmentIdAsString();
                 Version = emp.Version;
@@ -86,6 +92,8 @@ namespace HelpdeskViewModels
                 emp.Lastname = Lastname;
                 emp.Phoneno = Phoneno;
                 emp.Email = Email;
+                emp.IsTech = emp.IsTech;
+                emp.StaffPicture64 = StaffPicture64;
                 emp.Version = Version;
                 opStatus = _dao.Update(emp);
 

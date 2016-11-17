@@ -34,7 +34,7 @@ namespace HelpdeskViewModels
             bool createOk = false;
             try
             {
-                DALUtils dalUtil = new DALUtils();
+                DALUtilsV2 dalUtil = new DALUtilsV2();
                 createOk = dalUtil.LoadCollections();
             }
             catch (Exception ex)

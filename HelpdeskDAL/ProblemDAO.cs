@@ -32,7 +32,7 @@ namespace HelpdeskDAL
             }
             catch (Exception ex)
             {
-                DALUtils.ErrorRoutine(ex, "ProblemDAO", "GetByDescription");
+                DALUtilsV2.ErrorRoutine(ex, "ProblemDAO", "GetByDescription");
             }
             return prob;
         }
@@ -59,7 +59,7 @@ namespace HelpdeskDAL
             }
             catch (Exception ex)
             {
-                DALUtils.ErrorRoutine(ex, "ProblemDAO", "Update");
+                DALUtilsV2.ErrorRoutine(ex, "ProblemDAO", "Update");
 
             }
             return status;
@@ -79,7 +79,7 @@ namespace HelpdeskDAL
             }
             catch (Exception ex)
             {
-                DALUtils.ErrorRoutine(ex, "ProblemDAO", "Create");
+                DALUtilsV2.ErrorRoutine(ex, "ProblemDAO", "Create");
             }
             return prob;
         }
@@ -95,7 +95,7 @@ namespace HelpdeskDAL
             }
             catch (Exception ex)
             {
-                DALUtils.ErrorRoutine(ex, "ProblemDAO", "Delete");
+                DALUtilsV2.ErrorRoutine(ex, "ProblemDAO", "Delete");
             }
 
             return deleteFlag;
@@ -117,7 +117,7 @@ namespace HelpdeskDAL
             }
             catch (Exception ex)
             {
-                DALUtils.ErrorRoutine(ex, "ProblemDAO", "GetAll");
+                DALUtilsV2.ErrorRoutine(ex, "ProblemDAO", "GetAll");
             }
             return probList;
         }
@@ -135,7 +135,7 @@ namespace HelpdeskDAL
             }
             catch (Exception ex)
             {
-                DALUtils.ErrorRoutine(ex, "ProblemDAO", "GetById");
+                DALUtilsV2.ErrorRoutine(ex, "ProblemDAO", "GetById");
             }
             return prob;
         }
