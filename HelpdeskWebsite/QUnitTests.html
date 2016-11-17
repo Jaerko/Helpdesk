@@ -5,8 +5,40 @@
     <title>QUnit Example</title>
     <link rel="icon" href="data:;base64,iVBORw0KGgo=">
     <link rel="stylesheet" href="//code.jquery.com/qunit/qunit-2.0.1.css">
+    <title>Case 2</title>
+   
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    
+    <link rel="icon" href="data;;base64,iVBORw0KGgo">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="utf-8" />
 </head>
-<body>
+
+<body><nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Helpdesk Case #2</a>
+    </div>
+    <div class="collapse navbar-collapse navbar-ex1-collapse row">
+        <ul class="nav navbar-nav" id="menu" style="padding-left:20px;">
+            <li><a href="/home.html">Home</a></li>
+            <li><a href="/employee.html">Employee</a></li>
+            <li><a href="/department.html">Department</a></li>
+            <li><a href="/problem.html">Problem</a></li>
+            <li><a href="/util.html">Util</a></li>
+            <li class="active"><a href="/QUnitTests.html">QUnit Tests</a></li>
+        </ul>
+        <ul class="nav pull-right" style="padding-right: 20px;padding-top:10px; color: white;font-weight:bolder">
+            <li>v2.0</li>
+        </ul>
+    </div>
+</nav>
     <h1 id="qunit-header">QUnit Test Suite</h1>
     <h2 id="qunit-banner"></h2>
     <div id="qunit-testrunner-toolbar"></div>
@@ -15,6 +47,9 @@
     <script src="scripts/jquery-3.1.1.min.js"></script>
     <script src="//code.jquery.com/qunit/qunit-2.0.1.js"></script>
     <script src="scripts/jquery.validate.min.js"></script>
+
+    <script src="scripts/jquery-3.1.1.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
     <script src="scripts/employee.js"></script>
     <script src="scripts/common.js"></script>
     <script src="scripts/QUnitTests.js"></script>
